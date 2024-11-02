@@ -10,7 +10,7 @@ jobs:
       - run: python hello.py
   build:
     needs: [test]
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       -  name: Upload a Build Artifact
